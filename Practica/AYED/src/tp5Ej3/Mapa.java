@@ -149,6 +149,7 @@ public class Mapa {
 	            }
 	        } else {
 	            Iterator<Edge<String>> iterador = ((AdjListVertex<String>) actual).getEdges().iterator();
+	            Iterator<Edge<String>> iterador2 = this.mapaCiudades.getEdges(actual).iterator();
 
 	            while (iterador.hasNext()) {
 	                Edge<String> sendero = iterador.next();
